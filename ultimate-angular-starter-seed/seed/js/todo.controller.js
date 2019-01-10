@@ -22,7 +22,12 @@ function TodoController() {
     completed: false,
     rating: 1,
     category: 'My WeIrDo CaTeGoRy',
-  }]
+  }];
+  this.deleteItem = function (itemIndex) {
+    this.list = this.list.filter((item, i) => {
+      return itemIndex !== i;
+    })
+  }
 }
 
 angular

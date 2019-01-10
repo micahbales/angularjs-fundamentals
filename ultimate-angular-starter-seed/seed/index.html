@@ -15,6 +15,7 @@
           <input type="checkbox" id="todo-{{ $index }}" ng-model="item.completed" />
           <label class="toggle" for="todo-{{ $index }}"></label>
           <p>{{ item.title}}</p>
+          <a ng-click="todo.deleteItem($index)">Delete</a>
         </li>
       </ul>
     </div>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6c3cb16-ac32-43cd-8c8e-b38a15ebdccd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a6c3cb16-ac32-43cd-8c8e-b38a15ebdccd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,20 +10,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            <state relative-caret-position="380">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+            <state relative-caret-position="513">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -51,8 +49,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/MainController.js" />
         <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/app.js" />
-        <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js" />
         <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html" />
+        <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js" />
       </list>
     </option>
   </component>
@@ -118,14 +116,6 @@
               <item name="ultimate-angular" type="b2602c69:ProjectViewProjectNode" />
               <item name="ultimate-angular" type="462c0819:PsiDirectoryNode" />
               <item name="ultimate-angular-starter-seed" type="462c0819:PsiDirectoryNode" />
-              <item name="seed" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ultimate-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ultimate-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="ultimate-angular-starter-seed" type="462c0819:PsiDirectoryNode" />
               <item name="solution" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -138,7 +128,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547155040919" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547156788460" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -168,12 +158,12 @@
       <updated>1547081953465</updated>
       <workItem from="1547081954951" duration="4000" />
       <workItem from="1547081964347" duration="375000" />
-      <workItem from="1547082800628" duration="7287000" />
+      <workItem from="1547082800628" duration="8215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7666000" />
+    <option name="totallyTimeSpent" value="8594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1215" y="23" width="1345" height="1255" extended-state="0" />
@@ -279,13 +269,6 @@
     <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/solution/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -295,8 +278,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        <state relative-caret-position="380">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
         </state>
       </provider>
     </entry>

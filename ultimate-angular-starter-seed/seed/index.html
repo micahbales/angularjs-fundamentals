@@ -5,13 +5,30 @@
     <title>Todo Client</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      body {
+        color: #000;
+        background-color: #6bb3ca;
+      }
+      .personal {background: green;}
+      .work {background: rebeccapurple;}
+      .weekend {background: yellow;}
+      .misc {background: gray;}
+    </style>
     <script src="js/libs/angular.js"></script>
   </head>
   <body>
 
     <div ng-controller="TodoController as todo">
       <ul>
-        <li ng-repeat="item in todo.list">
+        <li
+          ng-repeat="item in todo.list"
+          ng-class="{
+            personal: item.category === 'Personal',
+            work: item.category === 'Work',
+            weekend: item.category === 'Weekend',
+            misc: item.category !== 'Personal' && item.category !== 'Work' && item.category !== 'Weekend',
+          }">
           <p>{{ $index + 1 }}. {{ item.title}}</p>
           <p ng-if="item.completed">(This item is completed)</p>
           <p ng-if="item.rating >= 4">(This item is pretty important)</p>

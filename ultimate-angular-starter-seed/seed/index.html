@@ -31,7 +31,8 @@
           You have {{todo.getRemaining().length }} of {{ todo.list.length }} items remaining
         </span>
         <span ng-show="todo.getRemaining().length === 0">
-          You are super productive!
+          You are super productive! Boy, will you look at the time!
+          {{ todo.getCurrentTimestamp() | date: 'medium'}}
         </span>
       </p>
     </div>

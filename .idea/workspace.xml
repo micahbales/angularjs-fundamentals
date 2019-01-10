@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6c3cb16-ac32-43cd-8c8e-b38a15ebdccd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a6c3cb16-ac32-43cd-8c8e-b38a15ebdccd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="646">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -24,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="3" selection-end-column="24" />
+            <state relative-caret-position="847">
+              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -54,6 +52,7 @@
         <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/app.js" />
         <option value="$PROJECT_DIR$/starting-example/js/MainController.js" />
         <option value="$PROJECT_DIR$/starting-example/index.html" />
+        <option value="$USER_HOME$/.bashrc" />
         <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js" />
         <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html" />
       </list>
@@ -133,7 +132,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547162622658" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547163916556" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -163,12 +162,12 @@
       <updated>1547081953465</updated>
       <workItem from="1547081954951" duration="4000" />
       <workItem from="1547081964347" duration="375000" />
-      <workItem from="1547082800628" duration="12298000" />
+      <workItem from="1547082800628" duration="13550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12677000" />
+    <option name="totallyTimeSpent" value="13929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1215" y="23" width="1345" height="1255" extended-state="0" />
@@ -289,17 +288,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.bashrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="847">
+          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="646">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
         </state>
       </provider>
     </entry>

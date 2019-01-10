@@ -54,6 +54,10 @@ function TodoController() {
       return !todo.completed;
     });
   };
+
+  this.getCurrentTimestamp = function () {
+    return new Date().getTime();
+  }
 }
 
 angular

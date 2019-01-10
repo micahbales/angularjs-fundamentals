@@ -10,6 +10,23 @@
   <body>
 
     <div class="todo" ng-controller="TodoController as todo">
+      <form ng-submit="todo.addItem()">
+        <p>Add an Item</p>
+        <input
+          type="text"
+          placeholder="Title"
+          ng-model="todo.newTitle"/>
+        <input
+          type="number"
+          placeholder="Rating"
+          ng-model="todo.newRating" />
+        <input
+          type="text"
+          placeholder="Category"
+          ng-model="todo.newCategory"/>
+
+        <input type="submit" />
+      </form>
       <ul class="todo__list">
         <li ng-repeat="item in todo.list">
           <input type="checkbox" id="todo-{{ $index }}" ng-model="item.completed" />

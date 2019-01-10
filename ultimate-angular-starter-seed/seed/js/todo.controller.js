@@ -23,11 +23,25 @@ function TodoController() {
     rating: 1,
     category: 'My WeIrDo CaTeGoRy',
   }];
+
+  this.addItem = function () {
+    this.list.push({
+      title: this.newTitle ? this.newTitle : 'Item #' + this.list.length,
+      completed: false,
+      rating: this.newRating ? this.newRating : 1,
+      category: this.newCategory ? this.newCategory : 'Miscellaneous',
+    });
+
+    this.newTitle='';
+    this.newRating='';
+    this.category='';
+  };
+
   this.deleteItem = function (itemIndex) {
     this.list = this.list.filter((item, i) => {
       return itemIndex !== i;
     })
-  }
+  };
 }
 
 angular

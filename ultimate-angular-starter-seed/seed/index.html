@@ -34,7 +34,7 @@
           <p ng-if="item.rating >= 4">(This item is pretty important)</p>
           <div ng-switch="item.category">
             <div ng-switch-when="Personal">
-              <p>Category: Personal</p>
+              <a ng-href="https://www.google.com/"><p>Category: Personal</p></a>
             </div>
             <div ng-switch-when="Work">
               <p>Category: Work</p>
@@ -44,6 +44,8 @@
             </div>
             <div ng-switch-default>
               <p>Category: Other</p>
+              <iframe ng-src="https://giphy.com/embed/JyW51lx5XMDgQ" width="480" height="280"
+                      frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             </div>
           </div>
           <input ng-model="item.category" />

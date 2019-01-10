@@ -42,6 +42,14 @@ function TodoController() {
       return itemIndex !== i;
     })
   };
+
+  this.onFocus = function () {
+    console.log('Focus!');
+  };
+
+  this.onBlur = function () {
+    console.log('Blur');
+  };
 }
 
 angular

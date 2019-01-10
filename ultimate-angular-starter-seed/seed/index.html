@@ -15,7 +15,9 @@
         <input
           type="text"
           placeholder="Title"
-          ng-model="todo.newTitle"/>
+          ng-model="todo.newTitle"
+          ng-focus="todo.onFocus()"
+          ng-blur="todo.onBlur()" />
         <input
           type="number"
           placeholder="Rating"

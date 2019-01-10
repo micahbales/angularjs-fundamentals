@@ -15,6 +15,20 @@
           <p>{{ $index + 1 }}. {{ item.title}}</p>
           <p ng-if="item.completed">(This item is completed)</p>
           <p ng-if="item.rating >= 4">(This item is pretty important)</p>
+          <div ng-switch="item.category">
+            <div ng-switch-when="Personal">
+              <p>Category: Personal</p>
+            </div>
+            <div ng-switch-when="Work">
+              <p>Category: Work</p>
+            </div>
+            <div ng-switch-when="Weekend">
+              <p>Category: Weekend</p>
+            </div>
+            <div ng-switch-default>
+              <p>Category: Other</p>
+            </div>
+          </div>
         </li>
       </ul>
     </div>

@@ -11,9 +11,7 @@
 
     <div ng-controller="TodoController as todo">
       <ul>
-        <li>{{ todo.list[0].title}}</li>
-        <li>{{ todo.list[1].title}}</li>
-        <li>{{ todo.list[2].title}}</li>
+        <li ng-repeat="item in todo.list">{{ $index + 1 }}. {{ item.title}}</li>
       </ul>
     </div>
 

@@ -37,7 +37,7 @@ function TodoController() {
   this.removeTodo = function (itemIndex) {
     this.list.splice(itemIndex, 1);
   };
-  s = function () {
+  this.onFocus = function () {
     console.log('Focus!');
   };
 
@@ -47,8 +47,13 @@ function TodoController() {
 
   this.onChange = function () {
     console.log(this.newTitle);
-  }
-  this.onFocu
+  };
+
+  this.getRemaining = function () {
+    return this.list.filter((todo) => {
+      return !todo.completed;
+    });
+  };
 }
 
 angular

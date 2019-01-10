@@ -1,15 +1,18 @@
 function TodoController() {
   this.list = [{
     title: 'First todo item',
-    completed: false,
+    completed: true,
+    rating: 5,
   },
   {
     title: 'Number 2',
     completed: false,
+    rating: 2,
   },
   {
     title: '#3 FTW!',
     completed: false,
+    rating: 4,
   }]
 }
 

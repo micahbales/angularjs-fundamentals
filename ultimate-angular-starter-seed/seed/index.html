@@ -11,7 +11,11 @@
 
     <div ng-controller="TodoController as todo">
       <ul>
-        <li ng-repeat="item in todo.list">{{ $index + 1 }}. {{ item.title}}</li>
+        <li ng-repeat="item in todo.list">
+          <p>{{ $index + 1 }}. {{ item.title}}</p>
+          <p ng-hide="!item.completed">(This item is completed)</p>
+          <p ng-show="item.rating >= 4">(This item is pretty important)</p>
+        </li>
       </ul>
     </div>
 

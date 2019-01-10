@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6c3cb16-ac32-43cd-8c8e-b38a15ebdccd" name="Default Changelist" comment="" />
+    <list default="true" id="a6c3cb16-ac32-43cd-8c8e-b38a15ebdccd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/starting-example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/starting-example/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,11 +12,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="665">
+              <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/starting-example/js/MainController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/starting-example/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -22,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="847">
-              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+            <state relative-caret-position="350">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -51,10 +71,10 @@
         <option value="$PROJECT_DIR$/js/MainController.js" />
         <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/app.js" />
         <option value="$PROJECT_DIR$/starting-example/js/MainController.js" />
-        <option value="$PROJECT_DIR$/starting-example/index.html" />
         <option value="$USER_HOME$/.bashrc" />
-        <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js" />
         <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html" />
+        <option value="$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js" />
+        <option value="$PROJECT_DIR$/starting-example/index.html" />
       </list>
     </option>
   </component>
@@ -132,7 +152,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547163916556" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547164357350" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -162,16 +182,15 @@
       <updated>1547081953465</updated>
       <workItem from="1547081954951" duration="4000" />
       <workItem from="1547081964347" duration="375000" />
-      <workItem from="1547082800628" duration="13550000" />
+      <workItem from="1547082800628" duration="13827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13929000" />
+    <option name="totallyTimeSpent" value="14206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1215" y="23" width="1345" height="1255" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19646968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -274,10 +293,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starting-example/index.html">
+    <entry file="file://$USER_HOME$/.bashrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state relative-caret-position="133">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -288,24 +321,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.bashrc">
+    <entry file="file://$PROJECT_DIR$/starting-example/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/js/todo.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ultimate-angular-starter-seed/seed/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="304">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>

@@ -5,50 +5,16 @@
     <title>Todo Client</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-      body {
-        color: #000;
-        background-color: #6bb3ca;
-      }
-      .personal {background: green;}
-      .work {background: rebeccapurple;}
-      .weekend {background: yellow;}
-      .misc {background: gray;}
-    </style>
     <script src="js/libs/angular.js"></script>
   </head>
   <body>
 
-    <div ng-controller="TodoController as todo">
-      <ul>
-        <li
-          ng-repeat="item in todo.list"
-          ng-class="{
-            personal: item.category === 'Personal',
-            work: item.category === 'Work',
-            weekend: item.category === 'Weekend',
-            misc: item.category !== 'Personal' && item.category !== 'Work' && item.category !== 'Weekend',
-          }">
-          <p>{{ $index + 1 }}. {{ item.title}}</p>
-          <p ng-if="item.completed">(This item is completed)</p>
-          <p ng-if="item.rating >= 4">(This item is pretty important)</p>
-          <div ng-switch="item.category">
-            <div ng-switch-when="Personal">
-              <a ng-href="https://www.google.com/"><p>Category: Personal</p></a>
-            </div>
-            <div ng-switch-when="Work">
-              <p>Category: Work</p>
-            </div>
-            <div ng-switch-when="Weekend">
-              <p>Category: Weekend</p>
-            </div>
-            <div ng-switch-default>
-              <p>Category: Other</p>
-              <iframe ng-src="https://giphy.com/embed/JyW51lx5XMDgQ" width="480" height="280"
-                      frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </div>
-          </div>
-          <input ng-model="item.category" />
+    <div class="todo" ng-controller="TodoController as todo">
+      <ul class="todo__list">
+        <li ng-repeat="item in todo.list">
+          <input type="checkbox" id="todo-{{ $index }}" ng-model="item.completed" />
+          <label class="toggle" for="todo-{{ $index }}"></label>
+          <p>{{ item.title}}</p>
         </li>
       </ul>
     </div>

@@ -50,6 +50,10 @@ function TodoController() {
   this.onBlur = function () {
     console.log('Blur');
   };
+
+  this.onChange = function () {
+    console.log(this.newTitle);
+  }
 }
 
 angular

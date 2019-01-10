@@ -1,4 +1,5 @@
 function TodoController() {
+  this.newTodo = '';
   this.list = [{
     title: 'First todo item',
     completed: true,
@@ -24,26 +25,19 @@ function TodoController() {
     category: 'My WeIrDo CaTeGoRy',
   }];
 
-  this.addItem = function () {
+  this.addTodo = function () {
     this.list.push({
-      title: this.newTitle ? this.newTitle : 'Item #' + this.list.length,
+      title: this.newTodo,
       completed: false,
-      rating: this.newRating ? this.newRating : 1,
-      category: this.newCategory ? this.newCategory : 'Miscellaneous',
     });
 
-    this.newTitle='';
-    this.newRating='';
-    this.category='';
+    this.newTodo='';
   };
 
-  this.deleteItem = function (itemIndex) {
-    this.list = this.list.filter((item, i) => {
-      return itemIndex !== i;
-    })
+  this.removeTodo = function (itemIndex) {
+    this.list.splice(itemIndex, 1);
   };
-
-  this.onFocus = function () {
+  s = function () {
     console.log('Focus!');
   };
 
@@ -54,6 +48,7 @@ function TodoController() {
   this.onChange = function () {
     console.log(this.newTitle);
   }
+  this.onFocu
 }
 
 angular

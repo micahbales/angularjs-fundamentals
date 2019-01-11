@@ -1,32 +1,22 @@
 <html ng-app="app">
 <head>
     <title>My Angular app</title>
+    <meta charset="utf-8">
     <script src="js/angular.js"></script>
 </head>
 <body>
-    <a ng-click="myKey = 'one'">
-        Key one
-    </a>
-    <a ng-click="myKey = 'two'">
-        Key two
-    </a>
-    <div ng-controller="MainController as main">
-        {{ main.myObject[myKey] | uppercase }}
-        <pre>{{ main }}</pre>
-    </div>
-    <div>
-        {{ "209.82" | currency:'$':2 }}
-    </div>
-
-    <form ng-submit="main.getUser()">
+<div ng-controller="UserController as user">
+    <form ng-submit="user.getUser();">
         <input type="text" ng-model="user.userId">
         <button type="submit">
-            Search User
+            Search user
         </button>
     </form>
-    <pre>{{ main.chosenUser }}</pre>
+    <pre>{{ user.chosenUser }}</pre>
+</div>
 
-    <script src="js/app.js"></script>
-    <script src="js/MainController.js"></script>
+<script src="js/app.js"></script>
+<script src="js/UserController.js"></script>
+<script src="js/UserService.js"></script>
 </body>
 </html>

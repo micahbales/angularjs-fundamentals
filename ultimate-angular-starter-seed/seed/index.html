@@ -13,12 +13,15 @@
       <form class="todo__form" ng-submit="todo.addTodo()">
         <input type="text" ng-model="todo.newTodo" placeholder="Add New Todo">
       </form>
+
       <input
         type="text"
         placeholder="Type to search!"
         ng-model="search">
+
       <a ng-click="type = 'completed'">Completed</a>
       <a ng-click="type = 'title'">Title</a>
+
       <ul class="todo__list">
         <li ng-repeat="item in todo.list | orderBy: type: true | filter: search">
           <input type="checkbox" id="todo-{{ $index }}" ng-model="item.completed">
@@ -27,11 +30,12 @@
           <div ng-show="showEditField">
             <input type="text"
                    ng-model="item.title"
-                   ng-blur="showEditField = false">
+                   ng-blur="todo.updateTodo(item, $index); showEditField = false">
           </div>
           <a ng-click="todo.removeTodo(item, $index)">&#215</a>
         </li>
       </ul>
+
       <p class="todo__remaining">
         <span ng-show="todo.getRemaining().length > 0">
           You have {{todo.getRemaining().length }} of {{ todo.list.length }} items remaining

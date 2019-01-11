@@ -20,8 +20,15 @@ function TodoController(TodoService) {
     this.newTodo='';
   };
 
-  this.removeTodo = function (itemIndex) {
-    this.list.splice(itemIndex, 1);
+  ctrl.updateTodo = function (itemToUpdate, $index) {
+    TodoService
+      .update(itemToUpdate);
+  };
+
+  this.removeTodo = function (itemToRemove) {
+    this.list = this.list.filter(function (item) {
+      return item.id !== itemToRemove.id;
+    });
   };
   this.onFocus = function () {
     console.log('Focus!');
@@ -43,7 +50,7 @@ function TodoController(TodoService) {
 
   this.getCurrentTimestamp = function () {
     return new Date().getTime();
-  }
+  };
 
   getTodos();
 }

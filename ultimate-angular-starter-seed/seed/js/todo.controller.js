@@ -11,24 +11,28 @@ function TodoController(TodoService) {
       })
   }
 
-  this.addTodo = function () {
-    this.list.push({
-      title: this.newTodo,
+  ctrl.addTodo = function () {
+    ctrl.list.push({
+      title: ctrl.newTodo,
       completed: false,
     });
 
-    this.newTodo='';
+    ctrl.newTodo='';
   };
 
-  ctrl.updateTodo = function (itemToUpdate, $index) {
+  ctrl.updateTodo = function (itemToUpdate, index) {
     TodoService
       .update(itemToUpdate);
   };
 
-  this.removeTodo = function (itemToRemove) {
-    this.list = this.list.filter(function (item) {
-      return item.id !== itemToRemove.id;
-    });
+  ctrl.removeTodo = function (itemToRemove, index) {
+    TodoService
+      .remove(itemToRemove)
+      .then(function (response) {
+        ctrl.list = ctrl.list.filter(function (item) {
+          return item.id !== itemToRemove.id;
+        });
+      });
   };
   this.onFocus = function () {
     console.log('Focus!');

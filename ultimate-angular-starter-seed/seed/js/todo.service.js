@@ -15,7 +15,12 @@ function TodoService($http) {
         return response.data;
       })
   }
-  function remove() {}
+  function remove(todo) {
+    return $http.delete(API + todo.id)
+      .then(function (response) {
+        return response.data;
+      })
+  }
 
   return {
     create: create,

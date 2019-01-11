@@ -13,8 +13,14 @@
       <form class="todo__form" ng-submit="todo.addTodo()">
         <input type="text" ng-model="todo.newTodo" placeholder="Add New Todo">
       </form>
+      <input
+        type="text"
+        placeholder="Type to search!"
+        ng-model="search">
+      <a ng-click="type = 'completed'">Completed</a>
+      <a ng-click="type = 'title'">Title</a>
       <ul class="todo__list">
-        <li ng-repeat="item in todo.list">
+        <li ng-repeat="item in todo.list | orderBy: type: true | filter: search">
           <input type="checkbox" id="todo-{{ $index }}" ng-model="item.completed">
           <label class="toggle" for="todo-{{ $index }}"></label>
           <p ng-dblclick="showEditField = true" ng-hide="showEditField">{{ item.title}}</p>

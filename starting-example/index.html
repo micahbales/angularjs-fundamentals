@@ -17,6 +17,15 @@
     <div>
         {{ "209.82" | currency:'$':2 }}
     </div>
+
+    <form ng-submit="main.getUser()">
+        <input type="text" ng-model="user.userId">
+        <button type="submit">
+            Search User
+        </button>
+    </form>
+    <pre>{{ main.chosenUser }}</pre>
+
     <script src="js/app.js"></script>
     <script src="js/MainController.js"></script>
 </body>

@@ -27,9 +27,15 @@ function TodoController(TodoService) {
     ctrl.newTodo='';
   };
 
-  ctrl.updateTodo = function (itemToUpdate) {
+  ctrl.updateTodo = function (item) {
+    console.log(item);
+    if (!item.title) {
+      ctrl.removeTodo(item);
+      return;
+    }
+
     TodoService
-      .update(itemToUpdate);
+      .update(item);
   };
 
   ctrl.removeTodo = function (itemToRemove) {
@@ -41,6 +47,17 @@ function TodoController(TodoService) {
         });
       });
   };
+
+  ctrl.toggleState = function (item) {
+    TodoService
+      .update(item)
+      .then(function () {
+
+      }, function () {
+        item.completed = !item.completed;
+    });
+  };
+
   this.onFocus = function () {
     console.log('Focus!');
   };

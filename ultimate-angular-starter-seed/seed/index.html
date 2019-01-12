@@ -24,15 +24,19 @@
 
       <ul class="todo__list">
         <li ng-repeat="item in todo.list | orderBy: type: true | filter: search">
-          <input type="checkbox" id="todo-{{ $index }}" ng-model="item.completed">
+          <input
+            type="checkbox"
+            id="todo-{{ $index }}"
+            ng-model="item.completed"
+            ng-change="todo.toggleState(item)">
           <label class="toggle" for="todo-{{ $index }}"></label>
           <p ng-dblclick="showEditField = true" ng-hide="showEditField">{{ item.title}}</p>
           <div ng-show="showEditField">
             <input type="text"
-                   ng-mo`del`="item.title"
-                   ng-blur="todo.updateTodo(item, $index); showEditField = false">
+                   ng-model="item.title"
+                   ng-blur="todo.updateTodo(item); showEditField = false">
           </div>
-          <a ng-click="todo.removeTodo(item, $index)">&#215</a>
+          <a ng-click="todo.removeTodo(item)">&#215</a>
         </li>
       </ul>
 

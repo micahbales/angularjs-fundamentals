@@ -12,20 +12,27 @@ function TodoController(TodoService) {
   }
 
   ctrl.addTodo = function () {
-    ctrl.list.push({
-      title: ctrl.newTodo,
-      completed: false,
-    });
+    if (!ctrl.newTodo) return;
+
+    TodoService
+      .create({
+        title: ctrl.newTodo,
+        completed: false,
+      })
+      .then(function (response) {
+        ctrl.list.unshift(response);
+        ctrl.newTodo = '';
+      });
 
     ctrl.newTodo='';
   };
 
-  ctrl.updateTodo = function (itemToUpdate, index) {
+  ctrl.updateTodo = function (itemToUpdate) {
     TodoService
       .update(itemToUpdate);
   };
 
-  ctrl.removeTodo = function (itemToRemove, index) {
+  ctrl.removeTodo = function (itemToRemove) {
     TodoService
       .remove(itemToRemove)
       .then(function (response) {

@@ -28,7 +28,6 @@ function TodoController(TodoService) {
   };
 
   ctrl.updateTodo = function (item) {
-    console.log(item);
     if (!item.title) {
       ctrl.removeTodo(item);
       return;

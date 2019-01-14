@@ -33,8 +33,9 @@
           <p ng-dblclick="showEditField = true" ng-hide="showEditField">{{ item.title}}</p>
           <div ng-show="showEditField">
             <input type="text"
-                   ng-model="item.title"
-                   ng-blur="todo.updateTodo(item); showEditField = false">
+               ng-model="item.title"
+               ng-blur="todo.updateTodo(item); showEditField = false"
+               todo-autofocus="showEditField">
           </div>
           <a ng-click="todo.removeTodo(item)">&#215</a>
         </li>
@@ -54,5 +55,6 @@
     <script src="js/app.js"></script>
     <script src="js/todo.controller.js"></script>
     <script src="js/todo.service.js"></script>
+    <script src="js/todoAutofocus.directive.js"></script>
   </body>
 </html>
